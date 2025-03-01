@@ -16,14 +16,21 @@
         header {
             background-color: #2faac9;
             color: white;
-            text-align: center;
-            padding: 20px 0;
+            text-align: left;
+            padding: 5px;
+            display: flex;
+            align-items: center;
         }
         header img {
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            margin-top: 10px;
+            margin-right: 70px;
+            margin-left: 50px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
         }
         section {
             padding: 20px;
@@ -32,12 +39,11 @@
             background-color: white;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            margin: 0;
+            line-height: 1.6;
         }
         h2 {
             color: #333;
+            margin-top: 20px;
         }
         .section-title {
             font-weight: bold;
@@ -47,20 +53,30 @@
         }
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 5px;
             background-color: #28c3df;
-            color: rgb(255, 255, 255);
+            color: white;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        /* Responsiveness */
+        @media (max-width: 600px) {
+            header img {
+                width: 120px;
+                height: 120px;
+            }
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="123.jpeg" alt="Foto Muhammad Ajam Jamaludin" onerror="this.src='fallback-image.jpg'">
         <h1>Curriculum Vitae</h1>
-        <!-- Menambahkan foto di sini -->
-        <img src="123.jpeg" alt="Foto Muhammad Ajam Jamaludin"> <!-- Ganti "foto.jpg" dengan nama file foto yang kamu miliki -->
     </header>
     <section>
         <h2>Data Diri</h2>
@@ -79,7 +95,7 @@
 
         <h2>Keahlian</h2>
         <div class="content">
-            <p><span class="section-title">Keahlian:</span> Front-End Web Develover</p>
+            <p><span class="section-title">Keahlian:</span> Front-End Web Developer</p>
         </div>
 
         <h2>Hobi</h2>
